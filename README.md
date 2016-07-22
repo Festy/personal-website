@@ -2,8 +2,8 @@
 
 ##TODO
 1. Home Page
-  - Add CSS Loader
-  - Basic CSS Styling
+  - [x] Add CSS Loader
+  - [x] Basic CSS Styling
   - Routing
   - Links & Images to Other Pages
   - Links to GitHub, FaceBook, LinkedIn, Instagram
