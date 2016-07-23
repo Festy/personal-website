@@ -45,7 +45,7 @@ var config = {
                 }
             },
             {
-                test: /\.(png|jpg)$/,
+                test: /\.(png|jpg|svg)$/,
                 loader: 'file-loader?name=images/[name].[ext]'
             },
             {

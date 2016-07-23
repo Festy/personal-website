@@ -6,7 +6,7 @@
   - [x] Basic CSS Styling
   - Routing
   - Links & Images to Other Pages
-  - Links to GitHub, FaceBook, LinkedIn, Instagram
+  - [x] Links to GitHub, FaceBook, LinkedIn, Instagram
   - Improve Styling
 2. Resume Page
 3. Tools & Tech Page
