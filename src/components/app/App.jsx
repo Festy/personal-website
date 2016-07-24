@@ -11,19 +11,19 @@ class App extends React.Component {
             social_media_list : ["github", "linkedin", "instagram", "facebook"],
             social_media_info : {
                 "facebook": {
-                    src: require("public/images/social_media/facebook.svg"),
+                    src: require("public/images/social_media/facebook.png"),
                     href: "https://www.facebook.com/festy1601"
                 },
                 "linkedin": {
-                    src: require("public/images/social_media/linkedin.svg"),
+                    src: require("public/images/social_media/linkedin.png"),
                     href: "https://www.linkedin.com/in/festy",
                 },
                 "github": {
-                    src: require("public/images/social_media/github.svg"),
+                    src: require("public/images/social_media/github.png"),
                     href: "https://github.com/festy",
                 },
                 "instagram": {
-                    src: require("public/images/social_media/instagram.svg"),
+                    src: require("public/images/social_media/instagram.png"),
                     href: "https://www.instagram.com/festy1601/"
                 }
             }
@@ -32,19 +32,20 @@ class App extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className = {styles.center}>
+            <div className = {styles.center}>
+                <div>
 
                     <h3 className = {styles.center_text}>Welcome to my page!</h3>
                     <ProfilePhoto style = {styles.center_profile}/>
                     <Introduction style = {styles.center_text}/>
 
                 </div>
-                <div>
+                <br />
+                <div className = {[styles.center, styles.equi_center].join(" ")}>
 
                     {
                         this.state.social_media_list.map(media =>
-                        <SocialMedia id={media} src={this.state.social_media_info[media].src}/>
+                        <SocialMedia id={media} src={this.state.social_media_info[media].src} href={this.state.social_media_info[media].href}/>
                         )
                     }
                 </div>
@@ -56,9 +57,11 @@ class App extends React.Component {
 class SocialMedia extends React.Component {
     render() {
         return (
-            <div style={{display:"inline"}}>
+            <div className={styles.icon_div}>
             {
-                <img key = {this.props.id} src={this.props.src}/>
+                <a href={this.props.href}>
+                    <img  key = {this.props.id} className={styles.icon} src={this.props.src}/>
+                </a>
             }
             </div>
         );
