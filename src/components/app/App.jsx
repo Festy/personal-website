@@ -1,6 +1,7 @@
 import React from 'react';
 import ProfilePhoto from 'ProfilePhoto.jsx';
 import Introduction from 'Introduction.jsx';
+import Blog from 'Blog.jsx';
 import styles from 'app.css';
 
 class App extends React.Component {
@@ -48,6 +49,9 @@ class App extends React.Component {
                         <SocialMedia id={media} src={this.state.social_media_info[media].src} href={this.state.social_media_info[media].href}/>
                         )
                     }
+                </div>
+                <div>
+                    <Blog />
                 </div>
             </div>
         );

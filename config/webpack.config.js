@@ -16,7 +16,11 @@ var config = {
             path.join(__dirname, '..', 'src/components/app'),
             path.join(__dirname, '..', 'src/components/profile_photo'),
             path.join(__dirname, '..', 'src/components/introduction'),
-            path.join(__dirname, '..', 'src/components/main_container')
+            path.join(__dirname, '..', 'src/components/main_container'),
+            path.join(__dirname, '..', 'src/components/blog'),
+            path.join(__dirname, '..', 'src/components/blog/title'),
+            path.join(__dirname, '..', 'src/components/blog/content'),
+            path.join(__dirname, '..', 'src/components/code')
         ],
         extensions: ['', '.js', '.jsx', '.css']
     },
