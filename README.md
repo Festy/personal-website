@@ -4,7 +4,7 @@
 1. Home Page
   - [x] Add CSS Loader
   - [x] Basic CSS Styling
-  - Routing
+  - [x] Routing
   - Links & Images to Other Pages
   - [x] Links to GitHub, FaceBook, LinkedIn, Instagram
   - Improve Styling

@@ -1,8 +1,8 @@
 import React from 'react';
 import ProfilePhoto from 'ProfilePhoto.jsx';
 import Introduction from 'Introduction.jsx';
-import Blog from 'Blog.jsx';
 import styles from 'app.css';
+import {Link} from 'react-router';
 
 class App extends React.Component {
 
@@ -50,9 +50,8 @@ class App extends React.Component {
                         )
                     }
                 </div>
-                <div>
-                    <Blog />
-                </div>
+                <br />
+                <Link to="blog"> Click here for my blog</Link>
             </div>
         );
     }
