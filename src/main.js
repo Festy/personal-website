@@ -9,4 +9,5 @@ ReactDom.render(
     (<Router>
         <Route path="/" component={App} />
         <Route path="/blog" component={Blog} />
+        <Route path="/resume" component={Blog} />
     </Router>), document.getElementById('root'));

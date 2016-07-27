@@ -2,7 +2,7 @@ import React from 'react';
 import ProfilePhoto from 'ProfilePhoto.jsx';
 import Introduction from 'Introduction.jsx';
 import styles from 'app.css';
-import {Link} from 'react-router';
+import Sidebar from 'Sidebar.jsx';
 
 class App extends React.Component {
 
@@ -33,25 +33,29 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className = {styles.center}>
-                <div>
+            <div>
+                <div className={styles.sidebar_container}>
+                    <Sidebar />
+                    <div className = {[styles.center, styles.equi_center, styles.media_container].join(" ")}>
 
-                    <h3 className = {styles.center_text}>Welcome to my page!</h3>
-                    <ProfilePhoto style = {styles.center_profile}/>
-                    <Introduction style = {styles.center_text}/>
-
+                        {
+                            this.state.social_media_list.map(media =>
+                                <SocialMedia id={media} src={this.state.social_media_info[media].src} href={this.state.social_media_info[media].href}/>
+                            )
+                        }
+                    </div>
                 </div>
-                <br />
-                <div className = {[styles.center, styles.equi_center].join(" ")}>
+                <div className = {styles.main}>
+                    <div>
 
-                    {
-                        this.state.social_media_list.map(media =>
-                        <SocialMedia id={media} src={this.state.social_media_info[media].src} href={this.state.social_media_info[media].href}/>
-                        )
-                    }
+                        <h3 className = {styles.center_text}>Welcome to my page!</h3>
+                        <ProfilePhoto style = {styles.center_profile}/>
+                        <Introduction style = {styles.center_text}/>
+
+                    </div>
+                    <br />
+                    <br />
                 </div>
-                <br />
-                <Link to="blog"> Click here for my blog</Link>
             </div>
         );
     }

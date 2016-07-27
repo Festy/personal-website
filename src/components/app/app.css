@@ -2,7 +2,11 @@
     margin: auto;
     width: 50%;
 }
-
+.main {
+    width:80%;
+    position: relative;
+    display: inline-block;
+}
 .center_profile {
     display: block;
     margin-left: auto;
@@ -21,7 +25,7 @@
     width: 50px;
     height: auto;
     transition: all .08s ease-in-out;
-    box-shadow: 5px 5px 10px #888888;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
     border-radius: 25px;
 }
 
@@ -32,4 +36,18 @@
 .equi_center {
     display: flex;
     justify-content: space-between;
+}
+
+.media_container {
+    width:90%;
+    margin-top: 30px;
+}
+
+.sidebar_container {
+    float:left;
+    position:relative;
+    width: 20%;
+    height: 100vh;
+    background: #05668D;
+    padding-top: 100px;
 }

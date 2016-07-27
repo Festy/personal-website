@@ -20,7 +20,8 @@ var config = {
             path.join(__dirname, '..', 'src/components/blog'),
             path.join(__dirname, '..', 'src/components/blog/title'),
             path.join(__dirname, '..', 'src/components/blog/content'),
-            path.join(__dirname, '..', 'src/components/code')
+            path.join(__dirname, '..', 'src/components/code'),
+            path.join(__dirname, '..', 'src/components/sidebar')
         ],
         extensions: ['', '.js', '.jsx', '.css']
     },
