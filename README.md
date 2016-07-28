@@ -5,9 +5,9 @@
   - [x] Add CSS Loader
   - [x] Basic CSS Styling
   - [x] Routing
-  - Links & Images to Other Pages
+  - [x] Links & Images to Other Pages
   - [x] Links to GitHub, FaceBook, LinkedIn, Instagram
-  - Improve Styling
+  - [x] Improve Styling
 2. Resume Page
 3. Tools & Tech Page
 4. Blog Page
